@@ -27,14 +27,13 @@ public class Config {
             "minecraft:lantern"
     );
     public int meltRadius = 3;
-    public int updateInterval = 20; // ticks (1 second)
 
     public Config(File file) {
         this.file = file;
     }
 
     public static Config createAndLoad() {
-        File configFile = new File(FabricLoader.getInstance().getConfigDir().toFile(), "snowmelt.json");
+        File configFile = new File(FabricLoader.getInstance().getConfigDir().toFile(), "ImprovedSnowMelting.json");
 
         // Create config instance first
         Config config = new Config(configFile);
@@ -48,7 +47,6 @@ public class Config {
                     config.heatSources = loaded.heatSources;
                 }
                 config.meltRadius = loaded.meltRadius;
-                config.updateInterval = loaded.updateInterval;
                 LOGGER.info("Config loaded successfully");
             } catch (Exception e) {
                 LOGGER.warn("Failed to load config, using defaults: {}", e.getMessage());

@@ -20,9 +20,8 @@ public class SnowBlockAbstractMixin {
     private void heatBasedSnowMelting(BlockState state, ServerWorld world, BlockPos pos, Random random, CallbackInfo ci) {
         if (world.isClient) return;
         if (!state.isOf(Blocks.SNOW_BLOCK)) return;
-        MeltingSnowBlocks.LOGGER.info("is Snow_Block?: {} at {}",state.isOf(Blocks.SNOW_BLOCK), pos.toString());
         if(SnowMeltManager.checkAndMeltSnow(world,pos)){
-            MeltingSnowBlocks.LOGGER.info("Snow Block melt progress at {}", pos.toString());
+            MeltingSnowBlocks.LOGGER.debug("Snow Block melt progress at {}", pos.toString());
         }
     }
 }

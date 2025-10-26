@@ -6,12 +6,9 @@ import com.llamalad7.mixinextras.expression.Expression;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
-import net.minecraft.sound.BlockSoundGroup;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
-
 
 @Mixin(Blocks.class)
 public class BlocksMixin {
