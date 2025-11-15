@@ -9,8 +9,8 @@
 	],
 	"contact": {
 		"homepage": "https://mods.bertola.dk/",
-		"sources": "https://github.com/BertoMods/MeltingSnowBlocks",
-        "issues": "https://github.com/BertoMods/MeltingSnowBlocks/issues"
+		"sources": "https://github.com/BertoMods/ImprovedSnowMelting",
+        "issues": "https://github.com/BertoMods/ImprovedSnowMelting/issues"
 	},
 	"license": "GPLv3",
 	"icon": "assets/melting-snow-blocks/logo.png",
